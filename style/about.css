@@ -1,0 +1,183 @@
+.about_section {
+    margin: 300px 200px 100px 200px;
+    padding: 20px;
+
+}
+
+.about_section h2 {
+    font-size: 2.3rem;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.about_blocks {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__item {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin: 50px 10px 50px 10px;
+     background-color: aliceblue;
+     padding: 30px;
+}
+
+.about__item  .material-icons {
+    font-size: 3rem;
+    padding-bottom: 50px;
+}
+.about__item p{
+  padding: 20px;
+}
+
+.about_handmade_container h3{
+    text-align: center;
+    font-size: 2.3rem;
+    color: white;
+    margin-bottom: 100px;
+    
+}
+
+.about_handmade_flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   
+    align-items: center;
+    padding: 50px;
+}
+
+.about_handmade p {
+   
+    
+    padding: 20px;
+    margin: 20px;
+    width: 600px;
+}
+
+
+.list{
+    
+    margin: 100px 700px; 
+    
+}
+
+.list li {
+    padding: 20px;
+}
+
+@media (max-width: 700px) {
+    .about_section{
+        margin: 0px;
+        padding: 50px;
+    }
+     
+    .about_section p {
+        display: flex;
+    }
+    .about_blocks{
+        display: flex;
+      
+        flex-direction: column;
+        width: auto;
+        align-items: center;
+        padding: 0px;
+        margin-top: 100px;
+    }
+    .about__item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .about__item p {
+        padding: 10px;
+        width: auto;
+    }
+
+    .about_handmade_container h3{
+        padding: 0px;
+        margin: 100px 0px 100px 0px;
+        text-align: center;
+    }
+
+    .about_handmade_flex{
+        display: flex;
+        flex-direction: column;
+
+}
+    .about_handmade_img {
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    .about_handmade_img img{
+        width: 400px;
+
+    }
+
+    .about_handmade p {
+        display: flex;
+    }
+
+    .list_container {
+      
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .list{
+        margin: 10px;
+        padding: 10px;
+    }
+
+}
+
+
+@media (max-width: 1200px){
+    .about_blocks {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about_handmade_flex{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .list_container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px 0px 120px 0px;
+        padding: 0px;
+
+        
+    }
+
+    .list{
+        padding: 0px;
+        margin: 100px 0px 100px 0px;
+    }
+}
+
+
+
+@media (max-width: 2000px){
+    .list{
+   
+        margin: 100px 0px 100px 0px;
+        padding: 0px;
+        text-align: center;
+    }
+}
