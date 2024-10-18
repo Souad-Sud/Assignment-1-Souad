@@ -1,7 +1,24 @@
- 
+:root{
+   --nav_bar :#BFA100;;
+    
+}
+
+.nav_bar{
+   padding: 10px;
+   background-color: var(--nav_bar);
+   align-items: center;
+   margin: 30px 25px 30px 25px;
+   border-radius: 10px;
+   display: flex;  
+   flex-direction: row;
+   justify-content: space-between;
+   margin-bottom: 80px;
+   align-items: center;
+
+}
  .error {
-     color: white;
-     margin: 100px 0px 100px 0px;
+    
+     margin: 150px 0px 100px 0px;
      text-align: center;
       
      

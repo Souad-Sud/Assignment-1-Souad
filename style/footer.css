@@ -54,33 +54,13 @@ footer .footer__logo{
     font-size: 1.5rem;
     transform:  0.7s ease;
 }
-
-.navigation_item::after{
-    content: '';
-    position: absolute;
-    background-color: var( --colorr4);
-    height: 3px;
-    width: 0;
-    left: 0;
-    bottom: 0;
-    transition: all 0.5s ease;
-
-}
-
-.navigation_item:hover::after{
-    width: 100%;
-}
-
-.navigation_item a:hover, a:focus{
-    color: white;
-    font-weight: bold;
-}
+ 
 
 .footer__navigation_item{
    
     list-style: none;
    
-}
+}  
 
 .footer__navigation_item a {
     text-decoration: none;

@@ -1,8 +1,23 @@
 :root{
-    --colorr4 :#BFA100;
+    --nav_bar :#BFA100;;
      
-} 
+}
 
+.nav_bar{
+   
+ 
+    padding: 10px;
+    background-color: var(--nav_bar);
+    align-items: center;
+    margin: 30px 25px 30px 25px;
+    border-radius: 10px;
+    display: flex;  
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 80px;
+    align-items: center;
+}
+ 
 
 .contact_main h2{
     margin-top: 250px;

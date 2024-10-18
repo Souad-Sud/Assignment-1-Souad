@@ -1,3 +1,29 @@
+:root{
+    --nav_bar :#BFA100;;
+     
+}
+
+.nav_bar{
+   
+ 
+    padding: 10px;
+    background-color: var(--nav_bar);
+    align-items: center;
+    margin: 30px 25px 30px 25px;
+    border-radius: 10px;
+    display: flex;  
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 80px;
+    align-items: center;
+}
+ 
+
+.navigation__bar{
+background-color: var(--navBbar);
+}
+ 
+
 .main__shop{
      margin: 0px;
      padding: 0px;
@@ -31,7 +57,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 100px 350px 100px 350px;
+    margin: 100px 100px 100px 100px;
     justify-content: center;
     
 }
@@ -115,4 +141,6 @@
     width: 500px;
    }
 }
+ 
+
  
