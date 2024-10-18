@@ -9,6 +9,17 @@
 
 }
 
+/* I used :root to create variables for my colors */
+:root{
+    --color-btn :#BFA100;
+    --navBar : #faf6e646;
+    --headerColor: rgb(255, 255, 255);
+    --spanHeader: rgba(136, 93, 18, 0.898);
+    --bcg : #D7D5C8;
+     
+} 
+
+
 body{
   
         font-family: "PT Serif", serif;
@@ -16,20 +27,6 @@ body{
   
 }
 
-/* I used :root to create variables for my colors */
-:root{
-
-    --colorr1: #faf6e646;
-    --borderColor: rgb(236, 210, 210);
-    --colorr2: rgb(255, 255, 255);
-    --colorr3: rgba(136, 93, 18, 0.898);
-    --colorr4 :#BFA100;
-    --borderBtm: #FFFAFA;
-    --headerbckgdclr: rgba(201, 170, 103, 0.612);
-    --color10 : #9d9158;
-    --bcg :#D7D5C8;
-     
-} 
 
  
 
@@ -40,16 +37,21 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     height: 750px;
+<<<<<<< HEAD
     background-image: url("/Assignment-1-souad/img/ring-imag.jpg");
+=======
+    background-image: url("../img/ring-imag.jpg");
+>>>>>>> d0d5872 (link to img)
 
 }
 
 
  
 .navigation__bar{
+    
  
     padding: 10px;
-    background-color: var(--colorr1);
+    background-color: var(--navBar);
     align-items: center;
     margin: 30px 25px 30px 25px;
     display: flex;  
@@ -77,7 +79,31 @@ body{
     align-items: center;
 }
  
+
+
 /* Hover on the navigation's link */
+
+.navigation_item::after{
+    content: '';
+    position: absolute;
+    background-color: black;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    transition: all 0.5s ease;
+
+}
+
+.navigation_item:hover::after{
+    width: 100%;
+}
+
+.navigation_item a:hover, a:focus{
+    color: white;
+    font-weight: bold;
+}
+    
 .navigation_item {
    
     padding: 10px;
@@ -95,34 +121,18 @@ body{
 
  .navigation_item li a{
     text-decoration: none;
-   
-    padding: 10px;
+       padding: 10px;
     font-size: 1.5rem;
     transform:  0.7s ease;
 } 
 
- .navigation_item::after{
-    content: '';
-    position: absolute;
-   
-    height: 3px;
-    width: 0;
-    left: 0;
-    bottom: 0;
-    transition: all 0.5s ease;
-
-} 
-
-.navigation_item:hover::after{
-    width: 100%;
-} 
-
- .navigation_item a:hover, a:focus{
-  
-    font-weight: bold;
-}
-  
  
+
+ 
+
+
+
+
 /* ------hamburger button ------ */
  
 .hamburger{
@@ -143,7 +153,7 @@ body{
 }
 
 .header_title h1{
-    color: var(--colorr2);    
+    color: var(--headerColor);    
     align-items: center;
      margin-left: 100px;
     font-size: 3rem;
@@ -157,7 +167,7 @@ body{
  
  
 .header_title h1 span{
-    color: var( --colorr3);
+    color: var(--spanHeader);
     border-bottom: 10px double 	var(--borderBtm);
     font-size: 4rem;
     font-weight: bold;
@@ -175,7 +185,7 @@ body{
 .main_home .home_title{
      font-size: 3rem;
     text-align: center;
-    color: white;
+     color: white;
     margin: 300px 0px 100px 0px;
     letter-spacing: 3px;
     font-weight: normal;
@@ -277,7 +287,11 @@ body{
     align-items: center;
     width: 250px;
     margin-top: 30px;
+<<<<<<< HEAD
     background-color: var(--colorr4);
+=======
+    background-color: var(--color-btn);
+>>>>>>> d0d5872 (link to img)
     color: white;
     border-radius: 10px;
     padding: 10px 0px 10px 0px;
@@ -419,7 +433,7 @@ body{
         background-blend-mode: screen;
         background-color: var(--headerbckgdclr);
         background-position: center;
-        background-image: url("img/ring-imag.jpg");
+        background-image: url("./img/ring-imag.jpg");
         padding-bottom: 20px;
         margin-bottom: 20px;
          
