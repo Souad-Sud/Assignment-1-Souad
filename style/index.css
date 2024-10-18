@@ -38,10 +38,14 @@ body{
     background-size: cover;
     height: 750px;
 <<<<<<< HEAD
+<<<<<<< HEAD
     background-image: url("/Assignment-1-souad/img/ring-imag.jpg");
 =======
     background-image: url("../img/ring-imag.jpg");
 >>>>>>> d0d5872 (link to img)
+=======
+    background-image: url("../img/ring-imag.jpg");
+>>>>>>> main
 
 }
 
@@ -288,10 +292,14 @@ body{
     width: 250px;
     margin-top: 30px;
 <<<<<<< HEAD
+<<<<<<< HEAD
     background-color: var(--colorr4);
 =======
     background-color: var(--color-btn);
 >>>>>>> d0d5872 (link to img)
+=======
+    background-color: var(--color-btn);
+>>>>>>> main
     color: white;
     border-radius: 10px;
     padding: 10px 0px 10px 0px;
