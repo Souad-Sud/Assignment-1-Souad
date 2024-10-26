@@ -16,77 +16,59 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Comforter&family=Corinthia:wght@400;700&family=Cormorant+Garamond:wght@300&family=Gwendolyn:wght@400;700&family=Meow+Script&family=Noticia+Text&family=PT+Serif:ital@1&family=Playfair+Display&family=Smooch&display=swap"
         rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="style/pageNotFound.css" type="text/css">
-    <link rel="stylesheet" href="style/index.css" type="text/css">
-    <link rel="stylesheet" href="style/footer.css" type="text/css">
+    <link rel="stylesheet" href="./styles/pageNotFound.css" type="text/css">
+    <link rel="stylesheet" href="./styles/footer.css" type="text/css">
+    <link rel="stylesheet" href="./styles/navigation_bar.css" type="text/css">
+    <script src="js/index.js" async></script>
     <title>BC-Fabrique</title>
 </head>
 
 <body class="erro__body">
+    <header class="page__header_without_bgimg">
+        <div class="page__nav_container">
 
-    <header class="header">
-        <nav class="nav_bar">
-            <img src="img/logo.png" alt="" class="logo">
+            <h1 class="page__title"><a href="index.html"> BC-Fabrique</a></h1>
+            <nav class="navigation__bar page__navigation-bar">
+                <ul class="navigation-menu">
+                    <li class="navigation_item"><a href="shop.html">Shop</a></li>
+                    <li class="navigation_item"><a href="about.html">About</a></li>
+                    <li class="navigation_item"><a href="contact.html">Contact</a></li>
+                    <li class="navigation_item"><a href="index.html">Home</a></li>
+                    <li class="navigation_item"><a href="login.html">Login</a></li>
+                </ul>
+                <!--navigation burger -->
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
 
-            <ul class="nav-menu">
-
-                <li class="navigation_item"><a href="shop.html">Shop</a></li>
-                <li class="navigation_item"><a href="about.html">About</a></li>
-                <li class="navigation_item"><a href="contact.html">Contact</a></li>
-                <li class="navigation_item"><a href="index.html">Home</a></li>
-                <li class="navigation_item"><a href="login.html">Login</a></li>
-            </ul>
-
-            <!--navigation burger -->
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </nav>
-
-
-
-
+        </div>
     </header>
-
     <main class="error">
         <h2>404 page not Found</h2>
         <a href="shop.html">back to shopping list</a>
     </main>
-
-
-    <!--footer contains the navigation bar, the logo and the copy right -->
     <footer>
-
-        <div class="footer__logo">
-
-            <img src="img/logo.png" alt="logo">
-
+        <div class="footer__intro">
+            <h4 class="page__title"><a href="index.html"> BC-Fabrique</a></h4>
             <p class="social_media">
                 You can follow me on
                 <a href="https://www.facebook.com/souya.tataki/" class="f-facebook">f</a>
-
-
             </p>
-
         </div>
         <nav class="footer__navigation">
-
             <ul class="footer__navigation_list">
-
                 <li class="footer__navigation_item"><a href="shop.html">Shop</a></li>
                 <li class="footer__navigation_item"><a href="about.html">About</a></li>
                 <li class="footer__navigation_item"><a href="index.html">Home</a></li>
                 <li class="footer__navigation_item"><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-
-        <hr>
+        <hr class="footer_hr">
         <p class="copy_right"> &copy;2024 BC Fabric</p>
     </footer>
-    <script src="js/index.js"></script>
-
 </body>
 
 </html>

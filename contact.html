@@ -16,53 +16,43 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Comforter&family=Corinthia:wght@400;700&family=Cormorant+Garamond:wght@300&family=Gwendolyn:wght@400;700&family=Meow+Script&family=Noticia+Text&family=PT+Serif:ital@1&family=Playfair+Display&family=Smooch&display=swap"
         rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="style/index.css" type="text/css">
-    <link rel="stylesheet" href="style/contac.css" type="text/css">
-    <link rel="stylesheet" href="style/footer.css" type="text/css">
+    <link rel="stylesheet" href="./styles/forms.css" type="text/css">
+    <link rel="stylesheet" href="./styles/footer.css" type="text/css">
+    <link rel="stylesheet" href="./styles/index.css" type="text/css">
+    <link rel="stylesheet" href="./styles/navigation_bar.css" type="text/css">
+    <script src="js/index.js" async></script>
     <title>BC-Fabrique</title>
 </head>
 
 <body>
+    <header class="page__header_without_bgimg">
+        <div class="page__nav_container">
+            <h1 class="page__title"><a href="index.html"> BC-Fabrique</a></h1>
+            <nav class="navigation__bar page__navigation-bar">
+                <ul class="navigation-menu">
+                    <li class="navigation_item"><a href="shop.html">Shop</a></li>
+                    <li class="navigation_item"><a href="about.html">About</a></li>
+                    <li class="navigation_item"><a href="#">Contact</a></li>
+                    <li class="navigation_item"><a href="index.html">Home</a></li>
+                    <li class="navigation_item"><a href="login.html">Login</a></li>
+                </ul>
+                <!--navigation burger -->
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
 
-    <header class="header">
-        <nav class="nav_bar">
-            <img src="img/logo.png" alt="" class="logo">
-
-            <ul class="nav-menu">
-
-                <li class="navigation_item"><a href="shop.html">Shop</a></li>
-                <li class="navigation_item"><a href="about.html">About</a></li>
-                <li class="navigation_item"><a href="contact.html">Contact</a></li>
-                <li class="navigation_item"><a href="index.html">Home</a></li>
-                <li class="navigation_item"><a href="login.html">Login</a></li>
-            </ul>
-
-            <!--navigation burger -->
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </nav>
-
-
-
-
+        </div>
     </header>
-
-
-
-
-
     <main class="contact_main">
         <!--Contact form-->
         <h2>Contact us</h2>
         <hr class="contact_hr">
-
         <div class="contact__page">
-            <div class="contac_form">
-
-                <form action="" method="get">
+            <div class="contact_form">
+                <form action="mailto:taki.souad-90@hotmail.com" method="post" enctype="text/plain">
                     <label for="name" class="name">
                         <input type="text" name="name" placeholder="Name" required><br><br>
                     </label><br>
@@ -71,15 +61,11 @@
                     </label><br>
                     <label for="message" class="message">
                         <textarea name="message" required placeholder="Message"></textarea>
-
                     </label>
                     <input type="submit" value="Submit" class="submit">
-
                 </form>
             </div>
-
             <div class="contact_adress">
-
                 <h2>Contact info</h2>
                 <ul>
                     <li>Phone: 0046 2 26464 6646 </li>
@@ -90,42 +76,29 @@
                     </li>
                 </ul>
             </div>
-
         </div>
-
-
     </main>
 
     <!--footer contains the navigation bar, the logo and the copy right -->
     <footer>
-
-        <div class="footer__logo">
-
-            <img src="img/logo.png" alt="logo">
-
+        <div class="footer__intro">
+            <h4 class="page__title"><a href="index.html"> BC-Fabrique</a></h4>
             <p class="social_media">
                 You can follow me on
                 <a href="https://www.facebook.com/souya.tataki/" class="f-facebook">f</a>
-
-
             </p>
-
         </div>
         <nav class="footer__navigation">
-
             <ul class="footer__navigation_list">
-
                 <li class="footer__navigation_item"><a href="shop.html">Shop</a></li>
                 <li class="footer__navigation_item"><a href="about.html">About</a></li>
                 <li class="footer__navigation_item"><a href="index.html">Home</a></li>
-                <li class="footer__navigation_item"><a href="contact.html">Contact</a></li>
+                <li class="footer__navigation_item"><a href="#">Contact</a></li>
             </ul>
         </nav>
-
-        <hr>
+        <hr class="footer_hr">
         <p class="copy_right"> &copy;2024 BC Fabric</p>
     </footer>
-    <script src="js/index.js"></script>
 
 </body>
 

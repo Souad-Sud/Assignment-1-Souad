@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Souad Taki">
+    <meta name="description" content="Assignment-1 create a website with html and css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" type="text/css">
     <link
@@ -11,55 +13,48 @@
         rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         type="text/css">
-
-    <!--Link from google font to use  font-family: "PT-->
+    <!--Link from google to use  font-family: "PT-->
     <link
         href="https://fonts.googleapis.com/css2?family=Comforter&family=Corinthia:wght@400;700&family=Cormorant+Garamond:wght@300&family=Gwendolyn:wght@400;700&family=Meow+Script&family=Noticia+Text&family=PT+Serif:ital@1&family=Playfair+Display&family=Smooch&display=swap"
         rel="stylesheet" type="text/css">
-
-    <link rel="stylesheet" href="./style/index.css" type="text/css">
-    <link rel="stylesheet" href="./style/footer.css" type="text/css">
+    <link rel="stylesheet" href="./styles/navigation_bar.css" type="text/css">
+    <link rel="stylesheet" href="./styles/index.css" type="text/css">
+    <link rel="stylesheet" href="./styles/footer.css" type="text/css">
     <title>BC-Fabrique</title>
+    <script src="js/index.js" async></script>
 </head>
 
 <body>
-
-    <header class="bcg_img">
-        <nav class="navigation__bar">
-            <img src="./img/logo.png" alt="" class="logo">
-
-            <ul class="nav-menu">
-
-                <li class="navigation_item"><a href="shop.html">Shop</a></li>
-                <li class="navigation_item"><a href="about.html">About</a></li>
-                <li class="navigation_item"><a href="contact.html">Contact</a></li>
-                <li class="navigation_item"><a href="#">Home</a></li>
-                <li class="navigation_item"><a href="login.html">Login</a></li>
-            </ul>
-
-            <!--navigation burger -->
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </nav>
-
+    <header class="page__header">
+        <div class="page__nav_container">
+            <h1 class="page__title"><a href="#"> BC-Fabrique</a></h1>
+            <nav class="navigation__bar page__navigation-bar">
+                <ul class="navigation-menu">
+                    <li class="navigation_item"><a href="shop.html">Shop</a></li>
+                    <li class="navigation_item"><a href="about.html">About</a></li>
+                    <li class="navigation_item"><a href="contact.html">Contact</a></li>
+                    <li class="navigation_item"><a href="#">Home</a></li>
+                    <li class="navigation_item"><a href="login.html">Login</a></li>
+                </ul>
+                <!--navigation burger -->
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
         <div class="header_title">
-            <h1>All you need is love.<br />
+            <h2>All you need is love.<br />
                 But a little, <br />
                 <span>JEWELRY</span> never hurt anybody.
-            </h1>
+            </h2>
         </div>
-
-
     </header>
-
     <main class="main_home">
         <h2 class="home_title">Pretty in JEWELRY </h2>
         <div class="home__content">
             <div class="home__paragr">
-
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Sit corrupti amet facere expedita autem, at consectetur
                     temporibus maxime tempora. Quis aliquam quaerat accusantium
@@ -71,9 +66,6 @@
                 </p>
             </div>
             <div class="home__paragr">
-
-
-
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Sit corrupti amet facere expedita autem, at consectetur
                     temporibus maxime tempora. Quis aliquam quaerat accusantium
@@ -85,188 +77,134 @@
                 </p>
             </div>
         </div>
-
-        <!--Bloc of Images-->
-
         <div class="img__gallery">
-
             <div class="img__sing_container">
-
                 <div class="img__container">
                     <img src="./img/bleu_earring.jpeg" alt="earrings image" class="img__item">
                 </div>
                 <h3>Earring chakra
                     28.00 €</h3>
-
             </div>
-
-
             <div class="img__sing_container">
                 <div class="img__container">
-
                     <img src="./img/chakra.jpeg" alt="earrings image" class="img__item">
                 </div>
-
-
-
-
                 <h3>Earring chakra
                     28.00 €</h3>
             </div>
             <div class="img__sing_container">
-
                 <div class="img__container">
-
                     <img src="./img/green_earring.jpeg" alt="earrings image" class="img__item">
                 </div>
-
-
-
                 <h3>Earring chakra
                     28.00 €</h3>
             </div>
             <div class="img__sing_container">
-
                 <div class="img__container">
-
                     <img src="./img/light_purple_bracelet.jpeg" alt="earrings image" class="img__item">
                 </div>
-
-
                 <h3>Earring chakra
                     28.00 €</h3>
             </div>
         </div>
-
-
-
         <article class="home__artice">
-
-            <!--Grid-->
             <div class="article_info">
-                <h2>Handmade earring with precious stone</h2>
+                <h2>Handmade earrings with precious stone</h2>
                 <a href="shop.html"> <button>Discover more</button></a>
-
-
             </div>
             <div class="article_img_container">
-
                 <img src="./img/chakrra.jpeg" alt="earrings image">
             </div>
         </article>
-
-
-
         <article class="about__article">
-            <!--Grid-->
             <div class="article_info">
-
                 <h2>You wanna learn how to do it !!!</h2>
                 <a href="about.html"><button>Discover</button></a>
-
             </div>
             <div class="article_img_container">
-
-                <img src="./img/handmade-jewl.jpeg" alt="handmade earrings">
+                <img src="./img/handmade-jewl.jpeg" alt="earrings image">
             </div>
         </article>
-
         <!-- Grid area-->
-
         <div class="grid flex">
-
-            <div class="green__bracelet">
-
+            <div class="green__bracelet flex-img">
                 <img src="./img/green-white_bracelet.jpeg" alt="Green bracelet">
-                <h4>Green bracelet</h4>
+                <h3>Green bracelet</h3>
             </div>
-            <div class="earring__chakra">
+            <div class="earring__chakra flex-img">
                 <img src="./img/chakra.jpeg" alt="Earring chakra" class="ressponsive_width">
-                <h4>Earring chakra</h4>
+                <h3>Earring chakra</h3>
             </div>
-            <div class="brown__bracelet">
+            <div class="brown__bracelet flex-img">
                 <img src="./img/brown_bracelet.jpeg" alt="white Brown bracelet">
-                <h4>White Brown bracelet</h4>
+                <h3>White Brown bracelet</h3>
             </div>
-            <div class="white_brown_bracelet">
-                <img src="./img/cord_bracelet.jpeg" alt=" bracelet  ">
-                <h4>cord bracelet with green pearl</h4>
+            <div class="white_brown_bracelet flex-img">
+                <img src="./img/cord_bracelet.jpeg" alt=" bracelet">
+                <h3>cord-green bracelet</h3>
             </div>
-            <div class="white_earring">
+            <div class="white_earring flex-img">
                 <img src="./img/white_earring.jpeg" alt="hite earring" class="ressponsive_width">
-                <h4>White earring</h4>
+                <h3>White earring</h3>
             </div>
-            <div class="white_green_bracelet">
+            <div class="white_green_bracelet flex-img">
                 <img src="./img/bleu-transparent_bracelet.jpeg" alt="White green bracelet">
-                <h4>Bleu white bracelet</h4>
+                <h3>Bleu white bracelet</h3>
             </div>
-            <div class="bracelet_chakra">
+            <div class="bracelet_chakra flex-img">
                 <img src="./img/red_white_bracelet.jpeg" alt="Bracelet chakra">
-                <h4>Red bracelet</h4>
+                <h3>Red bracelet</h3>
             </div>
-            <div class="pink_earring">
+            <div class="pink_earring flex-img">
                 <img src="./img/light_purple_bracelet.jpeg" alt="Pink earring" class="ressponsive_width">
-                <h4>Pink earring</h4>
+                <h3>Pink earring</h3>
             </div>
-            <div class="bleu_bracelet">
+            <div class="bleu_bracelet flex-img">
                 <img src="./img/chakra_bracelet.jpeg" alt="leu bracelet">
-                <h4>Chakra bracelet</h4>
+                <h3>Chakra bracelet</h3>
             </div>
-
-
         </div>
-
+        <div class="description">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa distinctio delectus eum architecto aut?
+                Aliquam, quia. Labore nesciunt aspernatur fugiat non eveniet reprehenderit porro laudantium modi quas
+                optio,
+                quidem ipsa?
+                Quod quidem dolorum praesentium culpa reprehenderit accusamus id assumenda, reiciendis ratione nisi
+                explicabo iure, eius fugiat odit corporis pariatur voluptatum impedit optio eaque eos qui a quo quaerat.
+                Dolores, necessitatibus.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio voluptates ex eligendi! Doloremque
+                exercitationem quidem nam, perspiciatis atque nesciunt id repellendus neque cupiditate eius amet
+                explicabo
+                tempore molestias, expedita accusamus.
+                Quibusdam nemo tenetur illo dignissimos nesciunt eligendi possimus ipsam officia beatae id cupiditate
+                itaque
+                quo dolorum, vel repellendus natus earum? Cum optio possimus commodi! Omnis sapiente eligendi
+                dignissimos
+                error dolor.
+            </p>
+        </div>
     </main>
-
-    <div class="description">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa distinctio delectus eum architecto aut?
-            Aliquam, quia. Labore nesciunt aspernatur fugiat non eveniet reprehenderit porro laudantium modi quas optio,
-            quidem ipsa?
-            Quod quidem dolorum praesentium culpa reprehenderit accusamus id assumenda, reiciendis ratione nisi
-            explicabo iure, eius fugiat odit corporis pariatur voluptatum impedit optio eaque eos qui a quo quaerat.
-            Dolores, necessitatibus.
-
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio voluptates ex eligendi! Doloremque
-            exercitationem quidem nam, perspiciatis atque nesciunt id repellendus neque cupiditate eius amet explicabo
-            tempore molestias, expedita accusamus.
-            Quibusdam nemo tenetur illo dignissimos nesciunt eligendi possimus ipsam officia beatae id cupiditate itaque
-            quo dolorum, vel repellendus natus earum? Cum optio possimus commodi! Omnis sapiente eligendi dignissimos
-            error dolor.
-
-        </p>
-    </div>
-
     <!--footer contains the navigation bar, the logo and the copy right -->
     <footer>
-
-        <div class="footer__logo">
-
-            <img src="img/logo.png" alt="logo">
-
+        <div class="footer__intro">
+            <h4 class="page__title"><a href="#"> BC-Fabrique</a></h4>
             <p class="social_media">
                 You can follow me on
                 <a href="https://www.facebook.com/souya.tataki/" class="f-facebook">f</a>
-
-
             </p>
 
         </div>
         <nav class="footer__navigation">
-
             <ul class="footer__navigation_list">
-
                 <li class="footer__navigation_item"><a href="shop.html">Shop</a></li>
                 <li class="footer__navigation_item"><a href="about.html">About</a></li>
                 <li class="footer__navigation_item"><a href="#">Home</a></li>
                 <li class="footer__navigation_item"><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-
         <hr class="footer_hr">
         <p class="copy_right"> &copy;2024 BC Fabric</p>
     </footer>
-    <script src="js/index.js"></script>
-
 </body>
 
 </html>

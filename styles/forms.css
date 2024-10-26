@@ -1,0 +1,183 @@
+.contact_main h2{
+    margin-top: 120px;
+    text-align: center;
+    font-size: 2.3rem;
+    color: #BFA100;
+
+}
+.contact_hr{
+    width: 50%;
+    margin: auto;
+    border-color: var(--colorr4);
+}
+.contact__page{
+    
+   display: flex;
+   flex-direction: row;
+   margin: 100px 300px 300px 300px;
+}
+.contact_form{
+   
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    padding: 100px 30px 100px 30px;
+    background-color: #E8E8E8;
+    margin-right: 5px;
+   
+}
+.contact_form form  {
+    display: flex;
+    flex-direction: column;
+}
+input{
+    font-size: 1.4rem;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid black;
+    width: 300px;
+    padding: 10px;
+}
+
+textarea{
+    font-size: 1.4rem;
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 40px;
+}
+
+.submit{
+    cursor: pointer;
+}
+
+.contact_adress{
+    background-color: rgb(248, 248, 200);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.contact_adress h2 {
+    margin-bottom: 30px;
+    color: var(--colorr4);
+}
+.contact_adress ul{
+    list-style-position: inside;
+    padding: 9px;
+}
+
+.contact_adress ul li{
+    font-size: 1.3rem;
+}
+
+/* ---------------------------------Login Page--------------------------------  */
+.login__section{
+    /* min-height: 100vh; */
+    height: 100%;
+    margin: 100px 100px;
+   
+}
+.login__section h2 {
+    margin-bottom: 50px;
+}
+.login_page{
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    text-decoration: underline;  
+}
+
+.logIn{
+    margin: 100px  auto 100px auto;
+    background-color: rgb(206, 206, 216);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid ;
+    align-items: center;
+    width: 50%;
+    padding: 150px;
+    height: 700px;
+    border: 1px solid #BFA100;
+
+}
+@media (max-width: 600px){
+    .contact_main{
+        margin: 0px;
+        padding: 0px;
+    }
+    .contact_hr{
+         margin: 20px auto;
+    }
+    .contact__page{
+       display: flex;
+       flex-direction: column;
+       margin: 0px;  
+    }
+    .contact_form{
+    
+        padding: 50px 0px 50px 0px;
+        width: 100%;
+    }
+    .contact_form   {
+        background-color: beige;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .contact_adress{
+        display: flex;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 50px;
+         
+    }
+    .contact_adress ul {
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+        list-style-position: inside;
+    }
+
+    /* ----------------login--------------- */
+    .login__section{
+        margin: 0px;
+    }
+    .logIn{
+        margin: auto;
+         
+    }
+}
+@media (max-width: 880px) {
+    .logIn{
+        margin: 0px;
+        padding:0px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1280px){
+    .contact__page{
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        padding-top: 20px;
+        align-items: center;
+        width: 100%;
+    }
+    .contact_adress{       
+        margin-bottom: 50px;
+         
+    }
+    .logIn{
+        margin: 0px;
+        padding:0px;
+        width: 100%;
+    }
+}
