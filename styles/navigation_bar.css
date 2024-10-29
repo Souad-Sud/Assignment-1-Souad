@@ -5,23 +5,23 @@
     font-family: "PT Serif", serif;
     margin: 0px;
     padding: 0px;
-
-
 }
-html{
+
+html {
     min-height: 100%;
 }
-body{
+
+body {
     font-family: "PT Serif", serif;
-    background-color: #D7D5C8;
-  
+    background-color: #D7D5C8; 
 }
+
 /* Navigation style */
-:root{
+:root {
     --navigation-color: #BFA100;    
 }
-.page__header {
-    
+
+.page__header {    
     background-image: url("../img/ring-imag.jpg");
     overflow: hidden;
     background-repeat: no-repeat;
@@ -30,7 +30,8 @@ body{
     padding-top: 30px;
     height: 600px;    
 }
-.page__nav_container{
+
+.page__nav_container {
     background-color: var(--navigation-color);
     align-items: center;
     display: flex;
@@ -38,63 +39,70 @@ body{
     justify-content: space-around;
     padding: 15px;      
 }
-.page__title a{
-    text-decoration: none;
-    color: white;
-    font-size: 1.5rem;
+
+.page__logo {
+    height:  auto;
 }
+
 .page__navigation-bar {
     margin: 0px;
     padding: 0px;
 }
+
 .navigation-menu {   
     display: flex;
     flex-direction: row;   
 }
- .navigation-menu li a:focus{
-    background-color: rgba(246, 214, 69, 0.736);
-    padding: 20px;
-    
-}
+.active, a:hover{
+   background-color: #e0c516;
+   padding: 9px;
+   font-weight: bold;
+} 
+
 .navigation-menu .navigation_item {
     list-style: none;
 } 
-.navigation-menu .navigation_item a{
+
+.navigation-menu .navigation_item a {
     text-decoration: none;
     padding-left: 25px;
     margin: 10px;
     color: white;
     font-size: 1.1rem;   
 } 
-.header_title{
+
+.header_title {
     margin: auto;
 }
-.header_title h2 {
+
+.header_title h1 {
     letter-spacing: 1px;
-    font-size: 1.9rem;
+    font-size: 2rem;
     margin: 100px auto;
     padding: 20px;
 }
-.header_title h2 span {
+
+.header_title h1 span {
     color: white;
-    font-size: 2rem;
+    font-size: 2.2rem;
 }
+
 /* ------hamburger button ------ */
- 
-.hamburger{
+.hamburger {
     display: none;
     cursor: pointer;   
 }
-.bar{
+
+.bar {
     display: block;  
     width: 30px;
     height: 4px;
     border-radius: 2px;   
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-   
+    transition: all 0.3s ease-in-out;   
 }
+
 /* shop.html/shop-bracelet.html/login.html/contact.html/items.html/  without background image*/
 
 .page__header_without_bgimg { 
@@ -103,11 +111,25 @@ body{
 }
 
 /* Responsive */
-@media (max-width: 700px){
-    .page__header{
-       background-position: center;       
+
+ 
+@media (max-width: 460px) {
+   
+     .navigation__bar {     
+        width: auto;
+        display: flex;
+        margin-left: -150px;
     }
-    .navigation-menu{
+
+}
+ 
+@media (max-width: 700px) {
+
+    .page__header {
+        background-position: center;       
+    }
+
+    .navigation-menu {
         position: fixed;
         left: -200%;
         top: 50px;
@@ -122,42 +144,30 @@ body{
         background-color: #BFA100;     
     }
 
-    .hamburger{
+    .hamburger {
         display: block;
         margin-left: 250px;     
     }
-    .bar{
+
+    .bar {
         background-color: white;
     }
-    .hamburger.active .bar:nth-child(2){
+
+    .hamburger.active .bar:nth-child(2) {
         opacity: 0;
      }
-    .hamburger.active .bar:nth-child(1){
+
+    .hamburger.active .bar:nth-child(1) {
         transform: translateY(10px) rotate(45deg);
     }
-    .hamburger.active .bar:nth-child(3){
-        transform: translateY(-10px) rotate(-45deg);
-     
-   }
-    .navigation-menu.active{
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-10px) rotate(-45deg);     
+    }
+
+    .navigation-menu.active {
         left: 0;
     }
 
 }
-@media (max-width: 410px){
-    .hamburger{       
-        margin: 0px     
-   }
-
-}
-@media (max-width: 350px) {
-    .page__header{
-        background-position: center;         
-     }
-    .page__header{
-        height: 100%;         
-    }
-    .header_title h2{
-        font-size: 1.5rem;        
-    }
-}
+ 

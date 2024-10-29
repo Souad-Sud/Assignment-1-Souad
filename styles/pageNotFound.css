@@ -1,16 +1,21 @@
  .error {
-     margin: 150px 0px 300px 0px;
+     height: 100vh;
      text-align: center;   
- }
- .error h2 {
+     margin: 200px 50px 0px 50px;
+}
+
+ .error h1 {
     font-size: 4rem;
- }
+}
+
  .error a {
     font-size: 1.4rem
- }
+}
 
- @media (max-width: 700px){
-   footer{
+ @media (max-width: 700px) {
+
+   footer {
       position: inherit;
    }
+   
  }

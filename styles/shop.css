@@ -1,14 +1,16 @@
-.main__shop{
-     margin: 0px;
-     padding: 0px;    
+.main__shop {
+    margin: 0px;
+    padding: 0px;    
 }
-.btn_container{
+
+.btn_container {
     display: flex;
     flex-direction: row;
     margin: 30px 350px 30px 350px;
     padding: 20px;    
 }
-.btn_container button{
+
+.btn_container button {
     padding: 10px 50px 10px 50px;
     margin: 10px;
     background-color: #BFA100;
@@ -18,27 +20,37 @@
     cursor: pointer;
     font-size: 1.2rem;
 }
-.main__shop_card{
-    
+
+.main__shop_card {    
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin: 100px 100px 100px 100px;
     justify-content: center;   
+ 
 }
-.shop_item{  
+
+.shop_item {  
+   
+    width: auto;
     padding: 10px;
     margin: 100px 20px 100px 20px;
     border: 1px solid #BFA100;
 }
+
 .shop_item img {
+    width: 280px;
+    height: 460px;
     max-width: 100%;
+    max-height: auto;
 }
-.shop_item h3{
+
+.shop_item h2 {
     padding-top: 30px;
     font-size: 1.3rem;
 }
-.shop_item .shop__btn{
+
+.shop_item .shop__btn {
     background-color: #BFA100;
     padding: 10px 30px 10px 30px;
     border-color: #BFA100;
@@ -48,7 +60,6 @@
     cursor: pointer;
     color: white;
 }
-
 /* --------------------------shop-bracelet.html----------------- */
 
 .btn_container a {
@@ -62,24 +73,55 @@
     color: white;
     text-decoration: none;   
 }
+
+.main__shop h1 {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    font-size: 1.7rem;
+    background-color: #f5db47;
+}
+
 /* -------------------Responsive------------------- */
+@media (max-width: 375px) {
+    .main__shop {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+
+    .btn_container {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        padding: 0px;
+        width: 100%;
+    }    
+    
+}
+
 @media (max-width: 400px) {
-    .main__shop{
+
+    .main__shop {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .btn_container{
-         display: flex;
-         flex-direction: column;
-         margin: auto;
-         padding: 0px;
-         width: 100%;
-    }
+
+    .btn_container {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        padding: 0px;
+        width: 100%;
+    } 
+
     .btn_container a {
         border-radius: 2rem;
-    }
-    .main__shop_card{
+    } 
+
+    .main__shop_card {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -88,53 +130,59 @@
         max-width: 100%;
         align-items: center;
     }
-    .shop_item{
+
+    .shop_item {
         display: flex;
         flex-direction: column;
         margin: 0px;
         padding: 0px;
         align-items: center;
     }
+
 }
+
 @media (max-width: 800px) {
 
-    .main__shop{
-        margin: 0px;
-        padding: 0px;
-    }
-    .btn_container a {
-        border-radius: 2rem;
-         
-    }
-    .main__shop_card{
-        display: flex;
-        flex-direction: row;
-        margin: 0px;
-        padding: 0px;
+    .main__shop h1 {
         width: 100%;
-        
-        
     }
-    .shop_item{
-       
+
+    .btn_container a {
+        border-radius: 2rem;        
+    }
+
+    .main__shop_card {
+        display: flex;
+        flex-direction: row;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;        
+    }
+
+    .shop_item {      
         display: flex;
         flex-direction: row;
         padding: 0px;
         margin: 0px;
     }
+
 }
-@media (max-width: 950px){
-    .btn_container{
+
+@media (max-width: 950px) {
+
+    .btn_container {
         margin: 0px;
     }  
-    .main__shop_card{
+
+    .main__shop_card {
         display: flex;
         flex-direction: column;   
         padding: 0px;
         align-items: center;
         justify-content: center;     
     }
-    .shop_item{
+
+    .shop_item {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -142,11 +190,14 @@
         margin: 10px;
         padding: 10px;
     }
+
 }
 
-@media (max-width: 1280px){
-    .main__shop_card{
+@media (max-width: 1280px) {
+
+    .main__shop_card {
         margin: 0px;
         padding: 0px;
     }
+
 }
